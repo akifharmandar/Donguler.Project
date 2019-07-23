@@ -65,10 +65,10 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button17 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.listBox6 = new System.Windows.Forms.ListBox();
             this.listBox7 = new System.Windows.Forms.ListBox();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -295,12 +295,13 @@
             // 
             this.button8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(16, 191);
+            this.button8.Location = new System.Drawing.Point(16, 193);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(220, 40);
             this.button8.TabIndex = 33;
             this.button8.Text = "ÇARPIM TABLOSU";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // listBox3
             // 
@@ -322,6 +323,7 @@
             this.button9.TabIndex = 31;
             this.button9.Text = "X İLE DİKKENAR ÜÇGEN";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -333,6 +335,7 @@
             this.button10.TabIndex = 30;
             this.button10.Text = "X İLE KARE";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -344,6 +347,7 @@
             this.button11.TabIndex = 29;
             this.button11.Text = "ALT ALTA X";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // lblYaziAlani
             // 
@@ -365,6 +369,7 @@
             this.button12.TabIndex = 27;
             this.button12.Text = "YAN YANA X";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // groupBox4
             // 
@@ -374,7 +379,7 @@
             this.groupBox4.Controls.Add(this.button15);
             this.groupBox4.Controls.Add(this.listBox5);
             this.groupBox4.Controls.Add(this.button16);
-            this.groupBox4.Location = new System.Drawing.Point(505, 390);
+            this.groupBox4.Location = new System.Drawing.Point(503, 390);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(425, 453);
             this.groupBox4.TabIndex = 36;
@@ -461,6 +466,7 @@
             this.button17.TabIndex = 18;
             this.button17.Text = "KONTROL DEĞİŞİMİ While Döngüsü ile";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // groupBox6
             // 
@@ -474,6 +480,28 @@
             this.groupBox6.TabIndex = 38;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "groupBox6";
+            // 
+            // button19
+            // 
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button19.Location = new System.Drawing.Point(209, 122);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(60, 40);
+            this.button19.TabIndex = 20;
+            this.button19.Text = "<<";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button18
+            // 
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button18.Location = new System.Drawing.Point(209, 76);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(60, 40);
+            this.button18.TabIndex = 18;
+            this.button18.Text = ">>";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // listBox6
             // 
@@ -492,31 +520,11 @@
             this.listBox7.Size = new System.Drawing.Size(177, 212);
             this.listBox7.TabIndex = 18;
             // 
-            // button18
-            // 
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button18.Location = new System.Drawing.Point(209, 76);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(60, 40);
-            this.button18.TabIndex = 18;
-            this.button18.Text = ">>";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button19.Location = new System.Drawing.Point(209, 122);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(60, 40);
-            this.button19.TabIndex = 20;
-            this.button19.Text = "<<";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1446, 861);
+            this.ClientSize = new System.Drawing.Size(1370, 750);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
